@@ -3,7 +3,6 @@
  */
 package ca.footeware.swing.temperatureconverter;
 
-import java.awt.EventQueue;
 import java.awt.Font;
 import java.io.Serializable;
 
@@ -122,7 +121,7 @@ public class TemperatureConverter extends JFrame {
 		public void insertUpdate(DocumentEvent e) {
 			update();
 		}
-		
+
 		private void update() {
 			if (celsiusText.isFocusOwner()) {
 				String fahrenheit = calculateFahrenheit();
